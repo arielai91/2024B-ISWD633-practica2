@@ -1,3 +1,1 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+La práctica fue muy útil, ya que me permitió comprender la creación de variables de entorno para un contenedor de diversas maneras. Además, mejoré en la gestión de puertos y aprendí sobre la creación y el uso de redes dentro de un contenedor.

@@ -7,14 +7,14 @@ docker run -d --name postgres -e POSTGRES_PASSWORD=123 postgres:11.21-alpine3.17
 ### Crear un cliente de postgres. Usar la imagen: dpage/pgadmin4
 
 ```
-docker run -d --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@example.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 80:80 dpage/pgadmin4
+docker run -d --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@local.com -e PGADMIN_DEFAULT_PASSWORD=123 -p 80:80 dpage/pgadmin4
 ```
 
 La figura presenta el esquema creado en donde los puertos son:
 
-- a: (completar con el valor)
-- b: (completar con el valor)
-- c: (completar con el valor)
+- 80
+- 5432
+- 80
 
 ![Imagen](img/esquema-ejercicio3.PNG)
 
@@ -22,7 +22,7 @@ La figura presenta el esquema creado en donde los puertos son:
 
 ### Acceder desde el cliente al servidor postgres creado
 
-# COMPLETAR CON UNA CAPTURA DEL LOGIN
+![LOGIN](img/login.png)
 
 ### Crear la base de datos info, y dentro de esa base la tabla personas, con id (serial) y nombre (varchar), agregar un par de registros en la tabla, obligatorio incluir su nombre
 
@@ -30,10 +30,16 @@ La figura presenta el esquema creado en donde los puertos son:
 
 ### Acceder al servidor
 
+```
+docker exec -it postgres psql -U postgres
+```
+
 ### Conectarse a la base de datos info
 
-# COMPLETAR
+```
+\c info
+```
 
 ### Realizar un select *from personas
 
-# AGREGAR UNA CAPTURA DE PANTALLA DEL RESULTADO
+![consulta](img/consulta.png)
